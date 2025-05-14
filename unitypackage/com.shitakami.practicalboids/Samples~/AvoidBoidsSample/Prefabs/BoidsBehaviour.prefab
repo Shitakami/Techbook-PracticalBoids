@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9002292507690356957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374631289222345307}
+  - component: {fileID: 6039446173522744148}
+  - component: {fileID: 7649734800214661297}
+  m_Layer: 0
+  m_Name: BoidsBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1374631289222345307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002292507690356957}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalScale: {x: 10, y: 5, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6039446173522744148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002292507690356957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca828a7e0e2346b40884698835d4354b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boidsSetting: {fileID: 11400000, guid: 02b3fa63e438fc84eb96ca7626360bef, type: 2}
+  _avoidObstacleSetting: {fileID: 11400000, guid: 49e7be2af9d081f4c89270a4452cd320,
+    type: 2}
+  _instanceCount: 30000
+  _mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  _material: {fileID: 2100000, guid: 1e6c1256ced597b48a0724e083133bcd, type: 2}
+  _shadowCastingMode: 1
+  _receiveShadows: 1
+  _jobBatchSetting:
+    RegisterInstanceToGridBatchCount: 64
+    CalculateSteerForceBatchCount: 1
+    ApplySteerForceBatchCount: 64
+    SpherecastCommandBatchCount: 64
+    AvoidObstacleAndUpdateBoidsJobBatchCount: 64
+    TranslateMatrix4x4BatchCount: 64
+--- !u!114 &7649734800214661297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002292507690356957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1447e9af9a90a394c80f2714cc810c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _drawArea: 1
