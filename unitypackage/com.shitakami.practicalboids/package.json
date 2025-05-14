@@ -1,0 +1,32 @@
+{
+  "name": "com.shitakami.practicalboids",
+  "version": "1.0.0",
+  "displayName": "Practical Boids Sample",
+  "description": "『Unity JobSystemで大群を動かす！実用Boidsシミュレーション』を簡単に試せるサンプルパッケージ",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+    "keywords": [
+        "boids",
+        "sample",
+        "job-system",
+        "burst"
+    ],
+    "dependencies": {
+        "com.unity.burst": "1.8.18",
+        "com.unity.collections": "2.5.1",
+        "com.unity.mathematics": "1.3.2"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "Shitakami",
+      "url": "shitakami.playground@gmail.com"
+    },
+    "samples": [
+        {
+            "displayName": "Boids Sample",
+            "description": "設定済みのBoidsを試すサンプル",
+            "path": "Samples~/AvoidBoidsSample"
+        }
+    ],
+    "licensesUrl": "https://github.com/Shitakami/Techbook-PracticalBoids/blob/main/LICENSE"
+}
